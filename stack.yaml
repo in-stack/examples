@@ -19,5 +19,5 @@ services:
       cpu: 2
       mem: 2
       instances:
-        min: 2
+        min: 5
         max: 100
