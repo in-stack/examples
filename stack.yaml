@@ -1,7 +1,7 @@
 
 services:
   app:
-    runtime: registry-cn-beijing-vpc.ack.aliyuncs.com/alinux3/node
+    runtime: registry-cn-beijing-vpc.ack.aliyuncs.com/acs/arms-prometheus-agent:v4.0.0
     build:
       script: sh ./build.sh
       dir: ./out
