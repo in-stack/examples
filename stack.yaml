@@ -1,7 +1,7 @@
 
 services:
   app:
-    runtime: hellworld
+    runtime: alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/node
     build:
       script: sh ./build.sh
       dir: ./out
