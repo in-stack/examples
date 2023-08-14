@@ -1,7 +1,7 @@
 
 services:
   app:
-    runtime: nodejs12
+    runtime: hellworld
     build:
       script: sh ./build.sh
       dir: ./out
