@@ -36,5 +36,5 @@ services:
         min: 2
         max: 100
 vars:
-  MYSQL_PSM: import('global/bus-dbs').services.myqsl.actual.PSM
+  MYSQL_PSM: import('global/bus-dbs').services.mysql.actual.PSM
 
