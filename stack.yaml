@@ -15,26 +15,9 @@ services:
       cpu: 2
       mem: 2
       instances:
-        min: 2
+        min: 1
         max: 100
-  app2:
-    type: app
-    runtime: nodejs12
-    build:
-      script: sh ./build.sh
-      dir: ./out
-    run:
-      cmd: node app.js
-      env:
-        a: b
-        token: a
-        MYSQL_PSM: $(MYSQL_PSM)
-    resources:
-      cpu: 2
-      mem: 2
-      instances:
-        min: 2
-        max: 100
+  
 vars:
   MYSQL_PSM: import('global/bus-dbs').services.mysql.actual.PSM
 
